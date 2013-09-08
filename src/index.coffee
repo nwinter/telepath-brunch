@@ -9,7 +9,9 @@ module.exports = class TelepathNotifier
 
   onCompile: (generatedFiles) ->
     scriptPath = sysPath.join __dirname, '..', 'telepath_build.py'
-    child = child = exec "python #{scriptPath}", (error, stdout, stderr) ->
+    console.log "script path:", scriptPath
+    child = exec scriptPath, (error, stdout, stderr) ->
       #console.log 'stdout: ' + stdout
       #console.log 'stderr: ' + stderr
       #console.log 'exec error: ' + error if error
+    null
