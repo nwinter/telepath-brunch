@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Brunch plugin to tell Telepath when it has recompiled something.",
   "author": "Nick Winter <livelily@gmail.com> (http://www.nickwinter.net/)",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/nwinter/telepath-brunch"
